@@ -1,0 +1,5 @@
+<h1>Register with API</h1>
+<p *ngIf="!auth.authenticated()">Login first to link your account!</p>
+<button class="btn btn-primary" (click)="parseUserData()" *ngIf="auth.authenticated()">Register</button>
+<br><br>
+<pre>{{registerResponse}}</pre>
